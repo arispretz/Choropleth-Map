@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    min-height: 100vh;
+    background-color: #fbc9e6;    
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+    font-family: verdana, sans-serif;
+    box-sizing: border-box
+  }
+
+#main {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+    margin-top: -50px;
+    justify-content: center;
+    border: 2px solid white;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    background-color: #ffffff;
+    opacity: 0.9;
+  }
+  
+  #title {
+    padding-top: 20px;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    color: #800080;
+    margin-bottom: 20px;
+  }
+ 
+#description {
+  margin-bottom: -40px;
+  font-size: 16px;
+}
+  
+  #choropleth-map-container {
+    margin-left: 120px;
+    width: 500px;
+    height: 700px;
+    position: relative;
+    user-select: none;
+  }
+  
+p {
+   color: #800080;
+   padding-top: 50px;
+   font-size: 12px;
+}
+
+.footer {
+  margin-top: -70px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#tooltip {
+  font-size: 12px;
+  padding: 10px;
+  box-shadow: 2px 1px 5px 1px #000000;
+  font-family: 'Lato', sans-serif;
+  min-width: fit-content;
+  background-color: #EAE6CA;
+  color: #7027A0;
+  width: 120px;
+  height: 30px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 250px;
+  left: 0;
+  z-index: 1;
+  }
+
+#legend {
+  margin-left: 500px;
+  margin-top: 80px;
+}
+
+.cell:hover {
+  stroke:  #28367e;
+  cursor: pointer;
+  stroke-width: 3px;
+}
+
+#cite-link {
+  font-size: 12px;
+  padding-bottom: 50px;
+}
+
+
+.heart {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  transform: rotate(-45deg) ;
+  }
+
+.heart::after {
+  background-color: red;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0px;
+  left: 5px;
+  }
+
+.heart::before {
+  content: "" ;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: 0px;
+  }
+
+#little {
+  margin-top: 980px;
+  margin-left: 670px;
+  margin-bottom: -120px;
+}
